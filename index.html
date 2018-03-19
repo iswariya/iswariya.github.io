@@ -4,19 +4,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Profile</title>
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <div vocab="http://schema.org/" typeof="Person">
-    <a property="image" href="">
-      <span property="name">Iswariya Ravichandran</span>
-    </a><br>
-    <span property="jobTitle">Solution Consultant, <a property="memberOf" href="http://coredigital.co/">Coredigital</a></span>
+  <div vocab="http://schema.org/" typeof="Person" class="about">
+    <span property="name">Iswariya Ravichandran</span><br>
+    <span property="jobTitle">Solution Consultant,</span> 
+    <span property="memberOf">
+      <a href="http://coredigital.co/">Coredigital</a>
+    </span>
     <div>
       Phone: <span property="telephone">+91 9840509423</span>
     </div>
     <div>
-      E-mail: <a property="email" href="mailto:iswariyaravi@gmail.com">iswariyaravi@gmail.com</a>
+      E-mail: 
+      <span property="email">
+        <a href="mailto:iswariyaravi@gmail.com">iswariyaravi@gmail.com</a>
+      </span>
     </div>
   </div>
 </body>
