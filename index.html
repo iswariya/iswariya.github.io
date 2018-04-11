@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,22 +8,106 @@
   <title>Profile</title>
   <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
-  <div vocab="http://schema.org/" typeof="Person" class="about">
-    <span property="name">Iswariya Ravichandran</span><br>
-    <span property="jobTitle">Solution Consultant</span> 
-    <div property="memberOf" typeof="http://schema.org/Organization">
-      <span property="name"><a href="http://coredigital.co/">Coredigital</a></span>
+  <div vocab="http://schema.org/" typeof="Person">
+    <div class="about">
+      <span property="name">Iswariya Ravichandran</span>
+      <br>
+      <span property="jobTitle">Solution Consultant</span>
+      <div property="worksFor" typeof="http://schema.org/Organization">
+        <span property="name">
+          <a href="http://coredigital.co/" target="_blank">Coredigital</a>
+        </span>
+      </div>
+      <div>
+        Phone:
+        <span property="telephone">+91 9840509423</span>
+      </div>
+      <div>
+        E-mail:
+        <span property="email">
+          <a href="mailto:iswariyaravi@gmail.com">iswariyaravi@gmail.com</a>
+        </span>
+      </div>
     </div>
+  </div>
+  <div vocab="http://schema.org/" typeof="CreativeWork">
     <div>
-      Phone: <span property="telephone">+91 9840509423</span>
-    </div>
-    <div>
-      E-mail: 
-      <span property="email">
-        <a href="mailto:iswariyaravi@gmail.com">iswariyaravi@gmail.com</a>
+      <span property="about">
+        <ul>
+          <li>Delivering full stack Drupal enterprise products.</li>
+          <li>Design and development of Drupal module and themes</li>
+          <li>Expertise in Linked data, with RDF creation, normalization</li>
+          <li>Building data visualisations using d3.js</li>
+          <li>Linked Data - Predicate mapping using Open Refine.</li>
+          <li>Setting LAMP stack on server along with Aegir hosting system.</li>
+          <li>Setting up Server vhost configurations along with SSL.</li>
+          <li>Developing smart contracts for Blockchain using Solidity</li>
+        </ul>
+      </span>
+      <span property="exampleOfWork">
+        <a href="http://fuzzyinsights.com/">Fuzzy Insights</a>
+        <p>a Community portal for authors to claim and acknowledge the profile for its authenticity.</p>
+        <p>This system has its own intelligent system to detect authors, reviewers from the input data and semantically map</p>
+        <ul>
+          <li>
+            <a href="http://lod.fuzzyinsights.com/journal.html">Query engine interface</a> for linked data
+          </li>
+          <li>NLP for analysing predicates(tuples)</li>
+          <li>Build a word cloud and force directed graph with d3js</li>
+        </ul>
+      </span>
+      <span property="exampleOfWork">
+        <a href="http://ld.iospress.nl/">LD Connect</a>
+        <p>Linked data platform contains linked metadata of all IOS Press books and journals</p>
+        <ul>
+          <li>
+            <a href="http://ld.iospress.nl/query-interface">Query interface</a> for linked data
+          </li>
+          <li>Build a force directed graph with d3js</li>
+          <li>Algorithm to convert xml format data to rdf format</li>
+          <li>Geocoding</li>
+        </ul>
+      </span>
+      <span property="exampleOfWork">
+        <a href="https://datasciencehub.net/">Data Science</a>
+        <p>a Content Management system and a paper submission system with six different user roles.</p>
+        <p>This system uses a custom login enforced by ORCID provider and update the following in the ORCID itself</p>
+        <ul>
+          <li>User profile</li>
+          <li>Works</li>
+          <li>Peer Reviews</li>
+        </ul>
+      </span>
+      <span property="exampleOfWork">
+        <a href="http://semantic-web-journal.net/">Semantic Web Journal</a>
+        <p>a Content Management system and a paper submission system for the journal “Semantic Web journal” with different user
+          roles.
+        </p>
+      </span>
+      <span property="exampleOfWork">
+        <a href="http://oupspecialsales.newgen.co/">OUP Special sales</a>
+        <p>a Content Management System for calculating and tracking quotes for various book print runs quantities.</p>
+      </span>
+      <span property="exampleOfWork">
+        <a href="http://culture.coredigital.co/">Coredigital culture</a>
+        <p>a semantic mediawiki site created for our organisation, which has semantically mapped data with RDF predicates. The
+          other flows included in the system are as follow
+        </p>
+        <ul>
+          <li>Process flow</li>
+          <li>Role based logins</li>
+          <li>Various template</li>
+          <li>Reviews</li>
+        </ul>
+      </span>
+      <span property="exampleOfWork">
+        <p>CubCadet</p>
+        <p>a mobile app for connecting to lawn mowers to calculate its metrics. This was developed using Xamarin.</p>
       </span>
     </div>
   </div>
 </body>
+
 </html>
